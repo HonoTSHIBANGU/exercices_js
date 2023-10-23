@@ -170,21 +170,36 @@ function findTriangleType(firstSide,secondSide,thirdSide) {
 // Print result of num1*num2 if operation is “multiply”  Print result of num1/num2 if operation is “divide”
 // Print result of num1%num2 if operation is “modulus” Else print “Invalid operation”
 
-function evalNumber (num1, num2, operateur) {
-    if(operateur === 'add'){
-        console.log(num1+num2);
-    } else if (operateur === 'subtract'){
-        console.log(num1-num2);
-    }
-    else if (operateur === 'multiply') {
-        console.log(num1*num2);} 
-    else if (operateur === 'divide'){ 
-        console.log(num1/num2);} else if (operateur === 'modulus') {
-             console.log(num1 % num2)}
-    else {console.log('invalid operation')}  }
+// function evalNumber (num1, num2, operateur) {
+//     if(operateur === 'add'){
+//         console.log(num1+num2);
+//     } else if (operateur === 'subtract'){
+//         console.log(num1-num2);
+//     }
+//     else if (operateur === 'multiply') {
+//         console.log(num1*num2);} 
+//     else if (operateur === 'divide'){ 
+//         console.log(num1/num2);} else if (operateur === 'modulus') {
+//              console.log(num1 % num2)}
+//     else {console.log('invalid operation')}}
 
-    evalNumber(50, 20, 'modulus');
+//     evalNumber(50, 20, 'modulus');
 
+ 
+ 	
+// Create Function `checkLeapYear()` find if the given year is a leap year 
+// If year is divisble by 4 and not divisble by 100 then print “leap year”.
+// Or if year is divisible by 400 then print “leap year”.
+// Else print “not a leap year”.
+
+function checkLeapYear(year) {
+if ((year % 4 === 0 && year % 100 !==0) || (year % 400 === 0)) { 
+    console.log('leap year');} 
+else { console.log('not a leap year');}
+}
+
+//appel de la fonction
+checkLeapYear(2000)
 
 </script>
 </head>
