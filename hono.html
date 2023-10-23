@@ -163,26 +163,30 @@ function findTriangleType(firstSide,secondSide,thirdSide) {
 
 }
 
+//Create `evalNumbers()` prints the result after evaluating arithmetic 
+//operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
+
+// Print result of num1+num2 if operation is “add” Print result of num1-num2 if operation is “subtract”
+// Print result of num1*num2 if operation is “multiply”  Print result of num1/num2 if operation is “divide”
+// Print result of num1%num2 if operation is “modulus” Else print “Invalid operation”
+
+function evalNumber (num1, num2, operateur) {
+    if(operateur === 'add'){
+        console.log(num1+num2);
+    } else if (operateur === 'subtract'){
+        console.log(num1-num2);
+    }
+    else if (operateur === 'multiply') {
+        console.log(num1*num2);} 
+    else if (operateur === 'divide'){ 
+        console.log(num1/num2);} else if (operateur === 'modulus') {
+             console.log(num1 % num2)}
+    else {console.log('invalid operation')}  }
+
+    evalNumber(50, 20, 'modulus');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-    </script>
+</script>
 </head>
 
 <body>
