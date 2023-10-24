@@ -152,16 +152,16 @@
 //Create Function `findLargest()` finds the largest of three numbers
 
 
-function findTriangleType(firstSide,secondSide,thirdSide) {
-    if (firstSide ===secondSide === thirdSide) {
-        return "equilateral";
-    }else if (firstSide !==secondSide && secondSide !== thirdSide){
-        return "scalène";
-    }else{
-        return "isocèle";
-    }
+// function findTriangleType(firstSide,secondSide,thirdSide) {
+//     if (firstSide ===secondSide === thirdSide) {
+//         return "equilateral";
+//     }else if (firstSide !==secondSide && secondSide !== thirdSide){
+//         return "scalène";
+//     }else{
+//         return "isocèle";
+//     }
 
-}
+// }
 
 //Create `evalNumbers()` prints the result after evaluating arithmetic 
 //operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
@@ -199,7 +199,7 @@ function findTriangleType(firstSide,secondSide,thirdSide) {
 // }
 
 // //appel de la fonction
-// checkLeapYear(2100)
+// checkLeapYear(800)
 
 
 //Function `findDaysInMonth()` finds the number of days in a given month of a year.
@@ -208,15 +208,28 @@ function findTriangleType(firstSide,secondSide,thirdSide) {
 // Else if month is equal to 4, 6, 9 or 11 print “30 days”.
 // Else print “31 days”.
 
-function findDaysInMonth(month){
+// function findDaysInMonth(month){
 
-    if (month < 1 || month > 12) {console.log('invalid month');}
-    else if (month === 2) {console.log("29 days");} 
-    else if ([4,6,9,11].includes(month)) 
-    {console.log("30 days");} else
-     (console.log('31 days'))
+//     if (month < 1 || month > 12) {console.log('invalid month');}
+//     else if (month === 2) {console.log("29 days");} 
+//     else if ([4,6,9,11].includes(month)) 
+//     {console.log("30 days");} else
+//      (console.log('31 days'))
+// }
+// findDaysInMonth(9);
+
+// Write a JavaScript function to check whether an `input` is an array or not
+function check (input){
+    if (Array.isArray(input)){console.log('array');}
+    else {console.log('not');}
 }
-findDaysInMonth(19);
+check([]);
+
+
+
+
+
+
 
 </script>
 </head>
