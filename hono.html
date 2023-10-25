@@ -232,20 +232,29 @@
 //Expected Output :
 //"Red,Green,White,Black"
 
-function joindre() {
-    const myColor = ['Red', 'Green', 'white', 'Black'];
-    const string = myColor.join(',')
-   // console.log(myColor.join(','));  
-   console.log(string)
-}
-joindre();
+// function joindre() {
+//     const myColor = ['Red', 'Green', 'white', 'Black'];
+//     const string = myColor.join(',')
+//    // console.log(myColor.join(','));  
+//    console.log(string)
+// }
+// joindre();
 
 //Write a JavaScript program that accepts a number as
 //input and inserts dashes (-) between each even number. 
 //For example if you accept 025468 the output should be 0-254-6-8.
 
-function 
-
+function insertHyphen(str) {
+  let strArr = str.split('');
+  let numArr = strArr.map(Number);
+    for(let i = 0; i < numArr.length; i++) {
+      if(numArr[i-1]%2===0 && numArr[i]%2===0) {
+        numArr.splice(i, 0, '-');
+      }
+    }
+  return numArr.join('');
+}
+console.log(insertHyphen('025468 '));
 
 
 
