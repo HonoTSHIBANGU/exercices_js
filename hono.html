@@ -244,22 +244,36 @@
 //input and inserts dashes (-) between each even number. 
 //For example if you accept 025468 the output should be 0-254-6-8.
 
-function insertHyphen(str) {
-  let strArr = str.split('');
-  let numArr = strArr.map(Number);
-    for(let i = 0; i < numArr.length; i++) {
-      if(numArr[i-1]%2===0 && numArr[i]%2===0) {
-        numArr.splice(i, 0, '-');
-      }
-    }
-  return numArr.join('');
+// function insertHyphen(str) {
+//   let strArr = str.split('');
+//   let numArr = strArr.map(Number);
+//     for(let i = 0; i < numArr.length; i++) {
+//       if(numArr[i-1]%2===0 && numArr[i]%2===0) {
+//         numArr.splice(i, 0, '-');
+//       }
+//     }
+//   return numArr.join('');
+// }
+// console.log(insertHyphen('025468 '));
+
+//Write a JavaScript program to compute the sum and product 
+//of an array of integers.
+
+//Create an object which describes some of your physical or mental attributes.
+//Add another property to the object. Show the complete object again.
+//Delete the least important attribute. Show the complete object again.
+
+let caracteristiques = {
+taille : '1.85m',
+poids : '78 kg',
+couleurPréferée : 'bleue',
+aptitudePhysique : 'apte',
 }
-console.log(insertHyphen('025468 '));
+caracteristiques.nationalite = 'congolaise',
 
+delete caracteristiques.nationalite;
 
-
-
-
+console.log( caracteristiques);
 
 </script>
 </head>
