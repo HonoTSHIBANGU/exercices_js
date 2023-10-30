@@ -276,9 +276,7 @@
 // console.log( caracteristiques);
 
 
-// const tab = [];
-//  tab.push(1,2,3);
-// console.log(tab);
+
 
 //Create two objects shoe_1 and shoe_2 which characterize shoes. 
 //Use the literal notation.
@@ -289,35 +287,128 @@
 
 
 
-const shoe_1 = { }
-    shoe_1.color = "white",
-    shoe_1.weight ='0.45 kg',
-    shoe_1.shoeSize = 45;
+// const shoe_1 = { }
+//     shoe_1.color = "white",
+//     shoe_1.weight ='0.45 kg',
+//     shoe_1.shoeSize = 45;
 
-const shoe_2 = {}
-    shoe_2.color = 'blue',
-    shoe_2.weight = '0.50'
-    shoe_2.shoeSize = 38;
+// const shoe_2 = {}
+//     shoe_2.color = 'blue',
+//     shoe_2.weight = '0.50'
+//     shoe_2.shoeSize = 38;
 
-const shirt_1 = { }
-    shirt_1.color = 'green',
-    shirt_1.shirtSize = 'M';
+// const shirt_1 = { }
+//     shirt_1.color = 'green',
+//     shirt_1.shirtSize = 'M';
 
-const shirt_2 = { }
-    shirt_1.color = 'black',
-    shirt_1.shirtSize = 'xl';
+// const shirt_2 = { }
+//     shirt_1.color = 'black',
+//     shirt_1.shirtSize = 'xl';
+// const warehouse = { 
+// shoe_1,
+// shoe_2,
+// shirt_1,
+// shirt_2,
+// }
+// console.log(warehouse);
 
-const warehouse = { 
-shoe_1,
-shoe_2,
-shirt_1,
-shirt_2,
-}
-
-console.log(warehouse);
+//  const tab = [];
+//  tab.push(1,2,3);
 
 
-   
+//  console.log(tab);
+
+//The Recipe Card
+//Create an object to hold information on your favorite recipe. 
+//It should have properties for title (a string), servings (a number), 
+//and ingredients (an array of strings). On separate lines 
+//(one console.log statement for each), 
+//log the recipe information so it looks like: 
+//Mole Serves: 2 Ingredients: cinnamon cumin cocoa
+
+//   const recettePreferee = {
+//     title : 'mole',
+//     servings : 2,
+//     ingredients : ["cinnamon", "cumin", "cocoa"],
+//   }
+
+//   console.log(recettePreferee.title);
+//   console.log(recettePreferee.servings);
+//   console.log(recettePreferee.ingredients);
+
+// The Cat Write yourself a virtual cat - animals
+// with a CLI are so much nicer than ones with fur.
+//Create an object that represents a cat. 
+//It should have properties for tiredness, hunger,
+// lonliness and happiness Next, write methods that 
+//increase and decrease those properties 
+//(there's an example in the slides). Call them something
+ //that actually represents what would increase or decrease these things, 
+ //like "feed", "sleep", or "pet".
+//Last, write a method that prints out the cat's status in each area.
+//Bonus: Make the functions take arguments that increase or 
+//decrease arbitrary amounts
+//Bonus: Make the functions as arbitrary as cats are - sometimes make it so the cat doesn't want to be petted.
+
+  const cat = {
+    tiredness : 9,
+    hunger : 5,
+    lonliness : 0,
+    happiness : 0,
+
+    sleep : function(){
+        this.tiredness -= 1
+    },
+    eat : function(){
+        this.hunger -= 1
+    },
+    pet : function(){
+        this.lonliness += 1
+    },
+    handelHappiness : function(){
+        let counter = 0;
+        if(this.tiredness === 0){
+            counter++;
+        };
+        if(this.hunger === 0){
+            counter++;
+        };
+        if(this.lonliness > 0 ){
+            counter++;
+        };
+        this.happiness += counter
+
+    }
+};
+cat.sleep();
+cat.sleep();
+cat.sleep();
+cat.sleep();
+cat.sleep();
+cat.sleep();
+cat.sleep();
+cat.sleep();
+cat.sleep();
+
+cat.eat();
+cat.eat();
+cat.eat();
+
+cat.eat();
+cat.eat();
+cat.pet();
+cat.pet();
+cat.pet();
+cat.handelHappiness();
+console.log(cat);
+
+
+
+
+
+  
+  
+
 
 
 
