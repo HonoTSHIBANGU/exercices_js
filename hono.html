@@ -4,424 +4,484 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-// //Declare a variable firstname and initialize it with the value 'Lata'.
-// let firstname = 'Lata';
-
-// //Which value does x have after execution of the following code?
-// let x = 'Geeta';
-// console.log(x);
-
-// //Declare a variable flower and assign it the value 'rose'. Declare a second variable tree and assign it the value 'maple'
-// let flower = 'rose';
-// let tree = 'maple';
-// // Which value does x have after execution of the following code?
-// let s = 'Tic';
-// x = 'Tac';
-// x = 'Toe';
-// console.log(x); //Toe
-
-// //Which value does x have after execution of the following code?                            
-// let h = 'Laurel';
-// let y = 'Hardy';
-// let z = y;
-// y = x;
-// x = z;
-// console.log(x); //Hardy
-
-// //Define a function hello that returns 'Hello world!'
- 
-// function hello () {  
-//     return console.log("hello world");
-// }
-
-// //Define two functions. The first function a should return 'Hello a!' and the second function b should return 'Hello b!'
-// function a () {
-//     return console.log('Hello a!');
-// }
-
-// function b () {
-//     return console.log('Hello b!');
-// }
-
-// //Define a function greet returning the value  'Haydo!'   Declare a variable salutation Call the function greet and assign the result of the call to the variable salutation.
-//  function greet (){
-//     return console.log('Haydo');
-//  }
-// const salutation = greet ();
-
-// // 
- 	
-// function hello() {
-//   return 'Hi!';
-// }
-
-// let x = hello();
-
-// //Write a function echo that also returns the passed parameter. echo('Greta') should return 'Greta' and echo('CO2') should return 'CO2'
- 
-// function echo (name) {
-// return name;
-// }
-//  console.log(echo('Greta')) ;
-//  console.log(echo('CO2'));
-
-//  // 
- 	
-//  let a = 0, 
-//     b = 1, 
-//      c = '1' 
-//  ;
-
-// //Que vaut (a === 0);     
-// console.log(a === 0); //true
-// //Que vaut (a === 1);
-// console.log(a === 1); //false
-// //Que vaut (a === b);
-// console.log(a === b); //false
-// // Que vaut (a === 0 && b === 1);  
-// // console.log(a === 0 && b === 1); // true
-// // Que vaut (a === 0 && b === 0); 
-// console.log (a === 0 && b === 0); //false
-// Que vaut (a === 0 || b === 0); 
-// console.log(a === 0 || b === 0); //true
-// Que vaut (b === c);
-// console.log (b === c); //false
-// Que vaut (b == c); 
-// console.log(b == c); //true
-// Que vaut (a < b);  
-// console.log(a < b); //true
-// Que vaut (a >= b); 
-// console.log (a >= b); //false
-// Que vaut (a !== b); 
-// console.log(a !== b); //true
-// Que vaut (a === 0 && b === 1 || b === 2)
-// console.log(a === 0 && b === 1 || b === 2)  // true
-// Que vaut (a === 0 && true)
-// console.log(a === 0 && true) //true
-
-// Ecrivez une fonction qui prend 3 paramètres (mots).
-
-//Concaténez les trois variables et vérifiez si sa taille est 
-//suppérieure à 100 alors affichez "C'est une grande phrase" 
-//sinon affichez "C'est une petite phrase"
-
-// function grandePhrase (mot1, mot2, mot3) {
-// const concat = (mot1 + '' + mot2 + '' + mot3);
-// if (100 < concat.length) {  console.log('c_est une grande phrase');
-// } else { console.log('c_est une petite phrase');
-// } 
-// };
-
- 
-// grandePhrase('chiaise','tz','ggghg')
-
- 
- 	
-// Déclarer et définir 2 variables misteryNumber et myNumber de type number.
-// En utilisant uniquement l'opérateur ternaire, on affiche :
-
-// Si les 2 nombres sont égaux Congratulations !
-// Sinon
-// Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +
-// Sinon on affiche -
-
-
-
-// const myNumber = 2;
-// const misteryNumber = 3;
-
-// const message = myNumber === misteryNumber ? 'Congrat' : myNumber < misteryNumber ? '+' : "-" 
-// console.log(message);
-
-// let messageTemp = "";
-
-// if(myNumber === misteryNumber){
-//     messageTemp = "Congratulation"
-// } 
-// else{
-//     if(myNumber < misteryNumber) {
-//     messageTemp = "+"
-// }else {
-//     if(myNumber < misteryNumber) {
-//     messageTemp = "+"
-// }
-// }
-// }
-
-//Create Function `findLargest()` finds the largest of three numbers
-
-
-// function findTriangleType(firstSide,secondSide,thirdSide) {
-//     if (firstSide ===secondSide === thirdSide) {
-//         return "equilateral";
-//     }else if (firstSide !==secondSide && secondSide !== thirdSide){
-//         return "scalène";
-//     }else{
-//         return "isocèle";
-//     }
-
-// }
-
-//Create `evalNumbers()` prints the result after evaluating arithmetic 
-//operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
-
-// Print result of num1+num2 if operation is “add” Print result of num1-num2 if operation is “subtract”
-// Print result of num1*num2 if operation is “multiply”  Print result of num1/num2 if operation is “divide”
-// Print result of num1%num2 if operation is “modulus” Else print “Invalid operation”
-
-// function evalNumber (num1, num2, operateur) {
-//     if(operateur === 'add'){
-//         console.log(num1+num2);
-//     } else if (operateur === 'subtract'){
-//         console.log(num1-num2);
-//     }
-//     else if (operateur === 'multiply') {
-//         console.log(num1*num2);} 
-//     else if (operateur === 'divide'){ 
-//         console.log(num1/num2);} else if (operateur === 'modulus') {
-//              console.log(num1 % num2)}
-//     else {console.log('invalid operation')}}
-
-//     evalNumber(50, 20, 'modulus');
-
- 
- 	
-// Create Function `checkLeapYear()` find if the given year is a leap year 
-// If year is divisble by 4 and not divisble by 100 then print “leap year”.
-// Or if year is divisible by 400 then print “leap year”.
-// Else print “not a leap year”.
-
-// function checkLeapYear(year) {
-// if ((year % 4 === 0 && year % 100 !==0) || (year % 400 === 0)) { 
-//     console.log('leap year');} 
-// else { console.log('not a leap year');}
-// }
-
-// //appel de la fonction
-// checkLeapYear(800)
-
-//Function `findDaysInMonth()` finds the number of days in a given month of a year.
-// If month is outside the range of 1 and 12 print “Invalid month”.
-// If month is equal to 2 ie, February print “29 days” if leap year else print “28 days”.
-// Else if month is equal to 4, 6, 9 or 11 print “30 days”.
-// Else print “31 days”.
-
-// function findDaysInMonth(month){
-
-//     if (month < 1 || month > 12) {console.log('invalid month');}
-//     else if (month === 2) {console.log("29 days");} 
-//     else if ([4,6,9,11].includes(month)) 
-//     {console.log("30 days");} else
-//      (console.log('31 days'))
-// }
-// findDaysInMonth(9);
-
-// Write a JavaScript function to check whether an `input` is an array or not
-// function check (input){
-//     if (Array.isArray(input)){console.log('array');}
-//     else {console.log('not');}
-// }
-// check([]);
-
-//Write a JavaScript function to get the first element of an array. 
-//Passing the parameter 'n' will return the first 'n' elements of the array.
-
-//Write a simple JavaScript program to join all elements of the following 
-//array into a string. Sample array : myColor = ["Red", "Green", "White", "Black"];
-//Expected Output :
-//"Red,Green,White,Black"
-
-// function joindre() {
-//     const myColor = ['Red', 'Green', 'white', 'Black'];
-//     const string = myColor.join(',')
-//    // console.log(myColor.join(','));  
-//    console.log(string)
-// }
-// joindre();
-
-//Write a JavaScript program that accepts a number as
-//input and inserts dashes (-) between each even number. 
-//For example if you accept 025468 the output should be 0-254-6-8.
-
-// function insertHyphen(str) {
-//   let strArr = str.split('');
-//   let numArr = strArr.map(Number);
-//     for(let i = 0; i < numArr.length; i++) {
-//       if(numArr[i-1]%2===0 && numArr[i]%2===0) {
-//         numArr.splice(i, 0, '-');
-//       }
-//     }
-//   return numArr.join('');
-// }
-// console.log(insertHyphen('025468 '));
-
-//Write a JavaScript program to compute the sum and product 
-//of an array of integers.
-
-//Create an object which describes some of your physical or mental attributes.
-//Add another property to the object. Show the complete object again.
-//Delete the least important attribute. Show the complete object again.
-
-// const caracteristiques = {
-// taille : '1.85m',
-// poids : '78 kg',
-// couleurPréferée : 'bleue',
-// aptitudePhysique : 'apte',
-// }
-// caracteristiques.nationalite = 'congolaise',
-
-// delete caracteristiques.nationalite;
-
-// console.log( caracteristiques);
-
-
-
-
-//Create two objects shoe_1 and shoe_2 which characterize shoes. 
-//Use the literal notation.
-//Create two other objects shirt_1 and shirt_2 which characterize shirts. 
-//First, create empty objects. Then, add attributes to the objects.
-//Create an object warehouse and add all 4 objects to it.
-//Show the price of the 4.-th product out of the warehouse object.
-
-
-
-// const shoe_1 = { }
-//     shoe_1.color = "white",
-//     shoe_1.weight ='0.45 kg',
-//     shoe_1.shoeSize = 45;
-
-// const shoe_2 = {}
-//     shoe_2.color = 'blue',
-//     shoe_2.weight = '0.50'
-//     shoe_2.shoeSize = 38;
-
-// const shirt_1 = { }
-//     shirt_1.color = 'green',
-//     shirt_1.shirtSize = 'M';
-
-// const shirt_2 = { }
-//     shirt_1.color = 'black',
-//     shirt_1.shirtSize = 'xl';
-// const warehouse = { 
-// shoe_1,
-// shoe_2,
-// shirt_1,
-// shirt_2,
-// }
-// console.log(warehouse);
-
-//  const tab = [];
-//  tab.push(1,2,3);
-
-
-//  console.log(tab);
-
-//The Recipe Card
-//Create an object to hold information on your favorite recipe. 
-//It should have properties for title (a string), servings (a number), 
-//and ingredients (an array of strings). On separate lines 
-//(one console.log statement for each), 
-//log the recipe information so it looks like: 
-//Mole Serves: 2 Ingredients: cinnamon cumin cocoa
-
-//   const recettePreferee = {
-//     title : 'mole',
-//     servings : 2,
-//     ingredients : ["cinnamon", "cumin", "cocoa"],
-//   }
-
-//   console.log(recettePreferee.title);
-//   console.log(recettePreferee.servings);
-//   console.log(recettePreferee.ingredients);
-
-// The Cat Write yourself a virtual cat - animals
-// with a CLI are so much nicer than ones with fur.
-//Create an object that represents a cat. 
-//It should have properties for tiredness, hunger,
-// lonliness and happiness Next, write methods that 
-//increase and decrease those properties 
-//(there's an example in the slides). Call them something
- //that actually represents what would increase or decrease these things, 
- //like "feed", "sleep", or "pet".
-//Last, write a method that prints out the cat's status in each area.
-//Bonus: Make the functions take arguments that increase or 
-//decrease arbitrary amounts
-//Bonus: Make the functions as arbitrary as cats are - sometimes make it so the cat doesn't want to be petted.
-
-  const cat = {
-    tiredness : 9,
-    hunger : 5,
-    lonliness : 0,
-    happiness : 0,
-
-    sleep : function(){
-        this.tiredness -= 1
-    },
-    eat : function(){
-        this.hunger -= 1
-    },
-    pet : function(){
-        this.lonliness += 1
-    },
-    handelHappiness : function(){
-        let counter = 0;
-        if(this.tiredness === 0){
-            counter++;
-        };
-        if(this.hunger === 0){
-            counter++;
-        };
-        if(this.lonliness > 0 ){
-            counter++;
-        };
-        this.happiness += counter
-
-    }
-};
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-cat.sleep();
-
-cat.eat();
-cat.eat();
-cat.eat();
-
-cat.eat();
-cat.eat();
-cat.pet();
-cat.pet();
-cat.pet();
-cat.handelHappiness();
-console.log(cat);
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-</script>
+    
 </head>
 
 <body>
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+</ul>
+<ul>
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+</ul>
+<ul>
+  <li>👻</li>
+  <li>👽</li>
+  <li>🦁</li>
+</ul>
 
+
+<script>
+
+  
+
+
+
+
+
+    // //Declare a variable firstname and initialize it with the value 'Lata'.
+    // let firstname = 'Lata';
+    
+    // //Which value does x have after execution of the following code?
+    // let x = 'Geeta';
+    // console.log(x);
+    
+    // //Declare a variable flower and assign it the value 'rose'. Declare a second variable tree and assign it the value 'maple'
+    // let flower = 'rose';
+    // let tree = 'maple';
+    // // Which value does x have after execution of the following code?
+    // let s = 'Tic';
+    // x = 'Tac';
+    // x = 'Toe';
+    // console.log(x); //Toe
+    
+    // //Which value does x have after execution of the following code?                            
+    // let h = 'Laurel';
+    // let y = 'Hardy';
+    // let z = y;
+    // y = x;
+    // x = z;
+    // console.log(x); //Hardy
+    
+    // //Define a function hello that returns 'Hello world!'
+     
+    // function hello () {  
+    //     return console.log("hello world");
+    // }
+    
+    // //Define two functions. The first function a should return 'Hello a!' and the second function b should return 'Hello b!'
+    // function a () {
+    //     return console.log('Hello a!');
+    // }
+    
+    // function b () {
+    //     return console.log('Hello b!');
+    // }
+    
+    // //Define a function greet returning the value  'Haydo!'   Declare a variable salutation Call the function greet and assign the result of the call to the variable salutation.
+    //  function greet (){
+    //     return console.log('Haydo');
+    //  }
+    // const salutation = greet ();
+    
+    // // 
+         
+    // function hello() {
+    //   return 'Hi!';
+    // }
+    
+    // let x = hello();
+    
+    // //Write a function echo that also returns the passed parameter. echo('Greta') should return 'Greta' and echo('CO2') should return 'CO2'
+     
+    // function echo (name) {
+    // return name;
+    // }
+    //  console.log(echo('Greta')) ;
+    //  console.log(echo('CO2'));
+    
+    //  // 
+         
+    //  let a = 0, 
+    //     b = 1, 
+    //      c = '1' 
+    //  ;
+    
+    // //Que vaut (a === 0);     
+    // console.log(a === 0); //true
+    // //Que vaut (a === 1);
+    // console.log(a === 1); //false
+    // //Que vaut (a === b);
+    // console.log(a === b); //false
+    // // Que vaut (a === 0 && b === 1);  
+    // // console.log(a === 0 && b === 1); // true
+    // // Que vaut (a === 0 && b === 0); 
+    // console.log (a === 0 && b === 0); //false
+    // Que vaut (a === 0 || b === 0); 
+    // console.log(a === 0 || b === 0); //true
+    // Que vaut (b === c);
+    // console.log (b === c); //false
+    // Que vaut (b == c); 
+    // console.log(b == c); //true
+    // Que vaut (a < b);  
+    // console.log(a < b); //true
+    // Que vaut (a >= b); 
+    // console.log (a >= b); //false
+    // Que vaut (a !== b); 
+    // console.log(a !== b); //true
+    // Que vaut (a === 0 && b === 1 || b === 2)
+    // console.log(a === 0 && b === 1 || b === 2)  // true
+    // Que vaut (a === 0 && true)
+    // console.log(a === 0 && true) //true
+    
+    // Ecrivez une fonction qui prend 3 paramètres (mots).
+    
+    //Concaténez les trois variables et vérifiez si sa taille est 
+    //suppérieure à 100 alors affichez "C'est une grande phrase" 
+    //sinon affichez "C'est une petite phrase"
+    
+    // function grandePhrase (mot1, mot2, mot3) {
+    // const concat = (mot1 + '' + mot2 + '' + mot3);
+    // if (100 < concat.length) {  console.log('c_est une grande phrase');
+    // } else { console.log('c_est une petite phrase');
+    // } 
+    // };
+    
+     
+    // grandePhrase('chiaise','tz','ggghg')
+    
+     
+         
+    // Déclarer et définir 2 variables misteryNumber et myNumber de type number.
+    // En utilisant uniquement l'opérateur ternaire, on affiche :
+    
+    // Si les 2 nombres sont égaux Congratulations !
+    // Sinon
+    // Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +
+    // Sinon on affiche -
+    
+    
+    
+    // const myNumber = 2;
+    // const misteryNumber = 3;
+    
+    // const message = myNumber === misteryNumber ? 'Congrat' : myNumber < misteryNumber ? '+' : "-" 
+    // console.log(message);
+    
+    // let messageTemp = "";
+    
+    // if(myNumber === misteryNumber){
+    //     messageTemp = "Congratulation"
+    // } 
+    // else{
+    //     if(myNumber < misteryNumber) {
+    //     messageTemp = "+"
+    // }else {
+    //     if(myNumber < misteryNumber) {
+    //     messageTemp = "+"
+    // }
+    // }
+    // }
+    
+    //Create Function `findLargest()` finds the largest of three numbers
+    
+    
+    // function findTriangleType(firstSide,secondSide,thirdSide) {
+    //     if (firstSide ===secondSide === thirdSide) {
+    //         return "equilateral";
+    //     }else if (firstSide !==secondSide && secondSide !== thirdSide){
+    //         return "scalène";
+    //     }else{
+    //         return "isocèle";
+    //     }
+    
+    // }
+    
+    //Create `evalNumbers()` prints the result after evaluating arithmetic 
+    //operations between two numbers of addition, multiplication, division, and modulus in JavaScript.
+    
+    // Print result of num1+num2 if operation is “add” Print result of num1-num2 if operation is “subtract”
+    // Print result of num1*num2 if operation is “multiply”  Print result of num1/num2 if operation is “divide”
+    // Print result of num1%num2 if operation is “modulus” Else print “Invalid operation”
+    
+    // function evalNumber (num1, num2, operateur) {
+    //     if(operateur === 'add'){
+    //         console.log(num1+num2);
+    //     } else if (operateur === 'subtract'){
+    //         console.log(num1-num2);
+    //     }
+    //     else if (operateur === 'multiply') {
+    //         console.log(num1*num2);} 
+    //     else if (operateur === 'divide'){ 
+    //         console.log(num1/num2);} else if (operateur === 'modulus') {
+    //              console.log(num1 % num2)}
+    //     else {console.log('invalid operation')}}
+    
+    //     evalNumber(50, 20, 'modulus');
+    
+     
+         
+    // Create Function `checkLeapYear()` find if the given year is a leap year 
+    // If year is divisble by 4 and not divisble by 100 then print “leap year”.
+    // Or if year is divisible by 400 then print “leap year”.
+    // Else print “not a leap year”.
+    
+    // function checkLeapYear(year) {
+    // if ((year % 4 === 0 && year % 100 !==0) || (year % 400 === 0)) { 
+    //     console.log('leap year');} 
+    // else { console.log('not a leap year');}
+    // }
+    
+    // //appel de la fonction
+    // checkLeapYear(800)
+    
+    //Function `findDaysInMonth()` finds the number of days in a given month of a year.
+    // If month is outside the range of 1 and 12 print “Invalid month”.
+    // If month is equal to 2 ie, February print “29 days” if leap year else print “28 days”.
+    // Else if month is equal to 4, 6, 9 or 11 print “30 days”.
+    // Else print “31 days”.
+    
+    // function findDaysInMonth(month){
+    
+    //     if (month < 1 || month > 12) {console.log('invalid month');}
+    //     else if (month === 2) {console.log("29 days");} 
+    //     else if ([4,6,9,11].includes(month)) 
+    //     {console.log("30 days");} else
+    //      (console.log('31 days'))
+    // }
+    // findDaysInMonth(9);
+    
+    // Write a JavaScript function to check whether an `input` is an array or not
+    // function check (input){
+    //     if (Array.isArray(input)){console.log('array');}
+    //     else {console.log('not');}
+    // }
+    // check([]);
+    
+    //Write a JavaScript function to get the first element of an array. 
+    //Passing the parameter 'n' will return the first 'n' elements of the array.
+    
+    //Write a simple JavaScript program to join all elements of the following 
+    //array into a string. Sample array : myColor = ["Red", "Green", "White", "Black"];
+    //Expected Output :
+    //"Red,Green,White,Black"
+    
+    // function joindre() {
+    //     const myColor = ['Red', 'Green', 'white', 'Black'];
+    //     const string = myColor.join(',')
+    //    // console.log(myColor.join(','));  
+    //    console.log(string)
+    // }
+    // joindre();
+    
+    //Write a JavaScript program that accepts a number as
+    //input and inserts dashes (-) between each even number. 
+    //For example if you accept 025468 the output should be 0-254-6-8.
+    
+    // function insertHyphen(str) {
+    //   let strArr = str.split('');
+    //   let numArr = strArr.map(Number);
+    //     for(let i = 0; i < numArr.length; i++) {
+    //       if(numArr[i-1]%2===0 && numArr[i]%2===0) {
+    //         numArr.splice(i, 0, '-');
+    //       }
+    //     }
+    //   return numArr.join('');
+    // }
+    // console.log(insertHyphen('025468 '));
+    
+    //Write a JavaScript program to compute the sum and product 
+    //of an array of integers.
+    
+    //Create an object which describes some of your physical or mental attributes.
+    //Add another property to the object. Show the complete object again.
+    //Delete the least important attribute. Show the complete object again.
+    
+    // const caracteristiques = {
+    // taille : '1.85m',
+    // poids : '78 kg',
+    // couleurPréferée : 'bleue',
+    // aptitudePhysique : 'apte',
+    // }
+    // caracteristiques.nationalite = 'congolaise',
+    
+    // delete caracteristiques.nationalite;
+    
+    // console.log( caracteristiques);
+    
+    
+    
+    
+    //Create two objects shoe_1 and shoe_2 which characterize shoes. 
+    //Use the literal notation.
+    //Create two other objects shirt_1 and shirt_2 which characterize shirts. 
+    //First, create empty objects. Then, add attributes to the objects.
+    //Create an object warehouse and add all 4 objects to it.
+    //Show the price of the 4.-th product out of the warehouse object.
+    
+    
+    
+    // const shoe_1 = { }
+    //     shoe_1.color = "white",
+    //     shoe_1.weight ='0.45 kg',
+    //     shoe_1.shoeSize = 45;
+    
+    // const shoe_2 = {}
+    //     shoe_2.color = 'blue',
+    //     shoe_2.weight = '0.50'
+    //     shoe_2.shoeSize = 38;
+    
+    // const shirt_1 = { }
+    //     shirt_1.color = 'green',
+    //     shirt_1.shirtSize = 'M';
+    
+    // const shirt_2 = { }
+    //     shirt_1.color = 'black',
+    //     shirt_1.shirtSize = 'xl';
+    // const warehouse = { 
+    // shoe_1,
+    // shoe_2,
+    // shirt_1,
+    // shirt_2,
+    // }
+    // console.log(warehouse);
+    
+    //  const tab = [];
+    //  tab.push(1,2,3);
+    
+    
+    //  console.log(tab);
+    
+    //The Recipe Card
+    //Create an object to hold information on your favorite recipe. 
+    //It should have properties for title (a string), servings (a number), 
+    //and ingredients (an array of strings). On separate lines 
+    //(one console.log statement for each), 
+    //log the recipe information so it looks like: 
+    //Mole Serves: 2 Ingredients: cinnamon cumin cocoa
+    
+    //   const recettePreferee = {
+    //     title : 'mole',
+    //     servings : 2,
+    //     ingredients : ["cinnamon", "cumin", "cocoa"],
+    //   }
+    
+    //   console.log(recettePreferee.title);
+    //   console.log(recettePreferee.servings);
+    //   console.log(recettePreferee.ingredients);
+    
+    // The Cat Write yourself a virtual cat - animals
+    // with a CLI are so much nicer than ones with fur.
+    //Create an object that represents a cat. 
+    //It should have properties for tiredness, hunger,
+    // lonliness and happiness Next, write methods that 
+    //increase and decrease those properties 
+    //(there's an example in the slides). Call them something
+     //that actually represents what would increase or decrease these things, 
+     //like "feed", "sleep", or "pet".
+    //Last, write a method that prints out the cat's status in each area.
+    //Bonus: Make the functions take arguments that increase or 
+    //decrease arbitrary amounts
+    //Bonus: Make the functions as arbitrary as cats are - sometimes make it so the cat doesn't want to be petted.
+    
+    //   const cat = {
+    //     tiredness : 9,
+    //     hunger : 5,
+    //     lonliness : 0,
+    //     happiness : 0,
+    
+    //     sleep : function(){
+    //         this.tiredness -= 1
+    //     },
+    //     eat : function(){
+    //         this.hunger -= 1
+    //     },
+    //     pet : function(){
+    //         this.lonliness += 1
+    //     },
+    //     handelHappiness : function(){
+    //         let counter = 0;
+    //         if(this.tiredness === 0){
+    //             counter++;
+    //         };
+    //         if(this.hunger === 0){
+    //             counter++;
+    //         };
+    //         if(this.lonliness > 0 ){
+    //             counter++;
+    //         };
+    //         this.happiness += counter
+    
+    //     }
+    // };
+    // cat.sleep();
+    // cat.sleep();
+    // cat.sleep();
+    // cat.sleep();
+    // cat.sleep();
+    // cat.sleep();
+    // cat.sleep();
+    // cat.sleep();
+    // cat.sleep();
+    
+    // cat.eat();
+    // cat.eat();
+    // cat.eat();
+    
+    // cat.eat();
+    // cat.eat();
+    // cat.pet();
+    // cat.pet();
+    // cat.pet();
+    // cat.handelHappiness();
+    // console.log(cat);
+    
+    
+    
+    // const tab = [
+    // { tile : "Le Hobbit",
+    //   Autor : "J.R.R. Tolkien",
+    //   alreadyRead : true,
+    // },
+    // {
+    //     title : "The Lord of the Rings",
+    //     Autor : "J.R.R. Tolkien",
+    //     alreadyRead : false,
+    // }
+    // ]
+    // for ( let i = 0; i< tab.length; i++){   
+    // if (tab[i].alreadyRead) 
+    // {console.log("already read The Hobbit by J.R.R. Tolkien");}
+    // else if (console.log('You still need to read The Lord of the Rings by J.R.R. Tolkien.'));
+    
+    // }
+      //You are given some names of different fruit and an unordered 
+    //list html element; add a list item for each to the unordered list in page.
+    //The Html sample code : <ul></ul> The fruits List : 
+    //const fruitList = ["apple", "banana", "tomato"];
+    
+    
+    // const fruitList = ["apple", "banana", "tomato"];
+    // //obtenir les elements ul via document....
+    // const ulList = document.querySelector('ul');
+    // for (let i=0; i<fruitList.length; i++) {
+    //     const li = document.createElement("li");
+    //     li.innerText = fruitList[i];
+    //     ulList.appendChild(li);
+    // }
+    
+    // 
+ 	
+
+  //Change the text in the first and the last list item element 
+//in every unordered list element on this page. Change it to 'first' and 'last'.
+
+const elements = document.querySelectorAll('ul');
+for(i=0;i<elements.length; i++){ 
+const ul = elements[i];
+const firstListItem = ul.querySelector('li:first-Child'); 
+const lastListItem = ul.querySelector('li:last-Child');
+firstListItem.textContent = 'first';
+lastListItem.textContent = 'last';
+  };
+
+
+
+    
+    </script>
 </body>
 </html>
