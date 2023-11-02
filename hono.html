@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<ul>
+<!-- <ul>
   <li>1</li>
   <li>2</li>
   <li>3</li>
@@ -22,7 +22,7 @@
   <li>👻</li>
   <li>👽</li>
   <li>🦁</li>
-</ul>
+</ul> -->
 
 
 <script>
@@ -470,15 +470,34 @@
   //Change the text in the first and the last list item element 
 //in every unordered list element on this page. Change it to 'first' and 'last'.
 
-const elements = document.querySelectorAll('ul');
-for(i=0;i<elements.length; i++){ 
-const ul = elements[i];
-const firstListItem = ul.querySelector('li:first-Child'); 
-const lastListItem = ul.querySelector('li:last-Child');
-firstListItem.textContent = 'first';
-lastListItem.textContent = 'last';
-  };
+// const elements = document.querySelectorAll('ul');
+// for(let i=0;i<elements.length; i++){ 
+// const ul = elements[i];
+// const firstListItem = ul.children[0];
+// const lastListItem = ul.children[ul.children.length - 1];
+// firstListItem.textContent = 'first';
+// lastListItem.textContent = 'last';
+//   };
 
+const app = document.querySelector("#list-app");
+// Create the necessary elements
+const list = document.createElement("ul");
+const input = document.createElement("input");
+input.setAttribute("type", "text");
+const Button = document.createElement("button");
+ Button.innerHTML = 'Create New';
+ //Add Elements in the container
+app.appendChild(input);
+app.appendChild(Button);
+app.appendChild(list);
+// Add event listeners to the elements
+Button.addEventListener("click", function(){
+    const newItem = document.createElement('li');
+    const inputValue = input.value;
+    newItem.innerHTML = inputValue;
+    list.appendChild(newItem);
+    input.value = '';
+});
 
 
     
